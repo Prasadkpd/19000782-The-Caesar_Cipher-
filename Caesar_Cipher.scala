@@ -4,21 +4,29 @@
 //Enter plus value as a key to Encryption
 //Enter minus value as a key to Decryption
 
-object Caesar_Cipher extends App{
+object Caesar_Cipher {
 
-	val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    val key = (scala.io.StdIn.readLine("Enter the shift: ").toInt + alphabet.size) % alphabet.size
-    val SecretMsgInput = scala.io.StdIn.readLine("Enter the Message: ")
-	val SecretMsgOutput = SecretMsgInput.map( (c: Char) => { 
+val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-		val x = alphabet.indexOf(c.toUpper)
-		if (x == -1){
-			c
-		}
-		else{
-			alphabet((x + key) % alphabet.size)
-			} 
-	});
+val E=(c:Char,key:Int,a:String)=> a((a.indexOf(c.toUpper)+key)%a.size)
 
-	println(SecretMsgOutput);
+val D=(c:Char,key:Int,a:String)=> a(if((a.indexOf(c.toUpper)-key)%a.size >=0) 
+      (a.indexOf(c.toUpper)-key)%a.size else a.size+(a.indexOf(c.toUpper)-key)%a.size)
+
+val cipher: ((Char, Int, String) => Char, String, Int, String) => String = (algo: (Char, Int, String) =>
+    Char, s: String, key: Int, a: String) =>
+    s.map(algo(_, key, a))
+
+def main(args: Array[String]): Unit = {
+        println("Caeser cipher")
+        println("Enter the key value: ")
+        val key = scala.io.StdIn.readInt()
+        println("Enter the string to Encrypt")
+        val text=scala.io.StdIn.readLine()
+        val ct: String = cipher(E, text, key, alphabet)
+        println("String after encrypted: " + ct)
+        val pt: String = cipher(D, ct, key, alphabet)
+        println("string after decrypted: " + pt)
+}
+
 }
