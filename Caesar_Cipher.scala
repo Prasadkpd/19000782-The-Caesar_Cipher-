@@ -23,7 +23,7 @@ def main(args: Array[String]): Unit = {
         val text=scala.io.StdIn.readLine()
         val ct: String = cipher(E, text, key, alphabet)
         println("String after encrypted: " + ct)
-        val pt: String = cipher(D, ct, key, alphabet)
+        val pt: String = cipher(D, text, key, alphabet)
         println("string after decrypted: " + pt)
 }
 

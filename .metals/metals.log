@@ -26385,3 +26385,14 @@ Caused by: java.lang.IllegalArgumentException: 'other' has different root
 [0m2021.09.01 21:46:16 WARN  no build target for: E:\Academic\2nd Year\1st Semester\SCS2204 Functional Programming\Assignments\Caesar cipher\Caesar_Cipher.scala[0m
 Sep 01, 2021 9:48:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.09.02 05:41:37 INFO  Started: Metals version 0.10.5 in workspace 'E:\Academic\2nd Year\1st Semester\SCS2204 Functional Programming\Assignments\Caesar cipher' for client Visual Studio Code 1.59.1.[0m
+[0m2021.09.02 05:41:38 INFO  time: initialize in 0.48s[0m
+[0m2021.09.02 05:41:43 WARN  Build server is not auto-connectable.[0m
+[0m2021.09.02 05:41:43 WARN  no build tool detected in workspace 'E:\Academic\2nd Year\1st Semester\SCS2204 Functional Programming\Assignments\Caesar cipher'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.09.02 05:41:43 WARN  no build target for: E:\Academic\2nd Year\1st Semester\SCS2204 Functional Programming\Assignments\Caesar cipher\Caesar_Cipher.scala[0m
+[0m2021.09.02 05:41:45 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.09.02 05:41:47 INFO  time: code lens generation in 3.9s[0m
+[0m2021.09.02 05:42:09 WARN  no build target for: E:\Academic\2nd Year\1st Semester\SCS2204 Functional Programming\Assignments\Caesar cipher\Caesar_Cipher.scala[0m
+[0m2021.09.02 05:42:11 WARN  no build target for: E:\Academic\2nd Year\1st Semester\SCS2204 Functional Programming\Assignments\Caesar cipher\Caesar_Cipher.scala[0m
+Sep 02, 2021 5:42:38 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
