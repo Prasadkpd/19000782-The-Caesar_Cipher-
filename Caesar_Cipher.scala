@@ -1,8 +1,6 @@
 //19000782
 //K.P.D.Prasad Lakshan
 //The Caesar Cipher
-//Enter plus value as a key to Encryption
-//Enter minus value as a key to Decryption
 
 object Caesar_Cipher {
 
