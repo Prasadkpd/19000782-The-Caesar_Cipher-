@@ -26396,3 +26396,7 @@ INFO: Unsupported notification method: $/setTrace
 [0m2021.09.02 05:42:11 WARN  no build target for: E:\Academic\2nd Year\1st Semester\SCS2204 Functional Programming\Assignments\Caesar cipher\Caesar_Cipher.scala[0m
 Sep 02, 2021 5:42:38 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Sep 02, 2021 5:43:01 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.09.02 05:45:32 WARN  no build target for: E:\Academic\2nd Year\1st Semester\SCS2204 Functional Programming\Assignments\Caesar cipher\Caesar_Cipher.scala[0m
+[0m2021.09.02 05:50:30 INFO  shutting down Metals[0m

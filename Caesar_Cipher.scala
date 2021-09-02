@@ -13,13 +13,13 @@ val D=(c:Char,key:Int,a:String)=> a(if((a.indexOf(c.toUpper)-key)%a.size >=0)
 
 val cipher: ((Char, Int, String) => Char, String, Int, String) => String = (algo: (Char, Int, String) =>
     Char, s: String, key: Int, a: String) =>
-    s.map(algo(_, key, a))
+    s.map(c=> if (c==' ') c else algo(c, key, a))
 
 def main(args: Array[String]): Unit = {
         println("Caeser cipher")
         println("Enter the key value: ")
         val key = scala.io.StdIn.readInt()
-        println("Enter the string to Encrypt")
+        println("Enter the string to Encrypt and Decrypt")
         val text=scala.io.StdIn.readLine()
         val ct: String = cipher(E, text, key, alphabet)
         println("String after encrypted: " + ct)
